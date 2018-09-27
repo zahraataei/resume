@@ -15,7 +15,7 @@ mixin job(title, place, placeLink, dates, location)
             ul
                 if place
                     li
-                        | at
+                        | در
                         |
                         span.place
                             if placeLink
@@ -32,7 +32,35 @@ mixin job(title, place, placeLink, dates, location)
                         |
                         |
                         =location
-        .details
+        //.details
+            block
+
+mixin education(title, place, placeLink, dates, location)
+    .block.boxed.job
+        header
+            h3=title
+            span.place
+            ul
+                if place
+                    li
+                        | از
+                        |
+                        span.place
+                            if placeLink
+                                a(href=placeLink)=place
+                            else
+                                =place
+                if dates
+                    li #[+i('calendar')]
+                        |
+                        |
+                        =dates
+                if location
+                    li #[+i('map-marker')]
+                        |
+                        |
+                        =location
+        //.details
             block
 
 mixin rateItem(title, subtitle, rate)
