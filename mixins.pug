@@ -7,7 +7,7 @@ mixin block(title, boxed=true)
 mixin i(icon)
     i.fa(class=`fa-${icon}`)
 
-mixin job(title, place, placeLink, dates, location)
+mixin job(title, place, placeLink, dates, location, at = "på")
     .block.boxed.job
         header
             h3=title
@@ -15,7 +15,8 @@ mixin job(title, place, placeLink, dates, location)
             ul
                 if place
                     li
-                        | at
+                        =at
+                        |
                         |
                         span.place
                             if placeLink
@@ -41,7 +42,7 @@ mixin rateItem(title, subtitle, rate)
             if subtitle
                 br
                 small=subtitle
-        //if rate
+        if rate
             .rate
                 each value, index in new Array(10)
                     span(class=rate > index ? 'fill' : '')
