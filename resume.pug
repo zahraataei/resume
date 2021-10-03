@@ -5,7 +5,7 @@ style
 header#heading
     .info
         h1 Zahra Ataei
-        span Dietist
+        span Nutritionist and Dietitian
 
         .links
             ul
@@ -28,40 +28,43 @@ header#heading
 
 main
     article#content
-        +block('Profil')
-            p Positiv och entusiastisk dietist med mer än fem år utbildning och erfarenhet inom nutrition och dietetik. Jag har hjälpt patienter med olika hälsoproblem som denna erfarenhet har gett mig förmågan att tänka kritiskt för att hantera olika situationer. Som en dietist tar jag alltid beslut enligt NCP och är väldigt noggrann att dokumentera dess olika delarna. Jag följer de evidensbaserade kunskaper inom yrket samt är skicklig att konsultera och inspirera människor att ha hälsosamma matvanor och livsstil, som jag gör det nu genom sociala medier. Jag är pålitlig, anpassbar i olika arbetsmiljö och har stor ansvarskänsla.
-            
-        +block('Arbetslivserfarenhet', false)
-            +job("Nutrition Coach", "social media", "https://www.instagram.com/atahealth/", "Jul, 2020 - Nuvarande", "Stockholm, Sweden")
-                p Som ett frivilligarbete skapar jag innehåll på Instagram och har framgångsrik erfarenhet att rådgivning och inspirera människor att ha hälsosamma matvanor. Min sida har nu mer än 10,000 följare som mest av de är persisktalande som bor inom Sverige eller andra EU-länder.
+        +block('Summary')
+            p I am an enthusiastic dietitian with more than five years of education and experience in nutrition and dietetics. Currently studying Master's in Nutrition Science at Karolinska Institutet.
+            p I have helped patients with various health problems. This experience has given me the ability to think critically to deal with different situations. I work based on scientific evidence, and I am skilled at consulting people to have healthy lifestyles. Reliability and having a great sense of responsibility are my strengths at work.
 
-            +job("Dietist", "Munesi gym", null, "Nov, 2017 - Nov, 2018", "Tehran, Iran")
-                p Jag jobbade där som dietist och rådgivare för nybörjare och professionella tränare samt över och underviktiga.
+        +block('Experience', false)
+            +job("Nutrition Coach", "social media", "https://www.instagram.com/atahealth/", "Jul, 2020 - Ongoing", "Stockholm, Sweden")
+                p As I have concerns about public health issues, especially in developing counties, I have created social media pages to inform, consult, and inspire people to have healthy eating habits and lifestyles. My page on Instagram now has more than 10,000 followers, mostly Persian-speaking living around the world.
 
-            +job("Dietist", "egen företag", null, "Sep, 2016 - Okt, 2017", "Tehran, Iran")
-                p Som ett deltidsjobb har jag jobbat självständigt med gravida och ammande kvinnor, överviktiga och de som lindrade av metabolt syndrom. jag arbetade online och hjälpte många patienter att förbättra deras hälsotillstånd.
+            +job("Dietitian", "Munesi gym", null, "Nov, 2017 - Nov, 2018", "Tehran, Iran")
+                p I worked there as a dietitian and consultant for beginners and professional trainers as well as obese and overweight people.
 
-        +block('Utbildning', false)
-            +job("Dietist Examen", "Kashan University of Medical Sciences", "http://en.kaums.ac.ir/", "Aug, 2014 - Maj, 2018", "Kashan, Iran")
-                p En 4 årig utbildning som ingår projekt och ett år praktik. Utbildningen har gett mig djupa kunskaper inom nutrition, diet planering samt nutritionsåtgärd för olika patienter i olika situationer.
+            +job("Dietitian", "Freelance", null, "Sep, 2016 - Oct, 2017", "Tehran, Iran")
+                p I have worked independently with pregnant and nursing mothers, overweight people, and those with metabolic syndrome as a part-time job. I worked online and was able to assist many individuals in improving their health.
 
-        +block('Praktikplatser', false)
-            +job("Praktik i olika avdelningar", "Shahid Beheshti Hospital", "http://en.kaums.ac.ir/Default.aspx?PageID=271", "Maj, 2017 - Maj, 2018", "Kashan, Iran")
+        +block('Education', false)
+            +job("Masters' in Nutrition Science", "Karolinska Institutet", "https://ki.se/", "Aug, 2021 - Ongoing", "Stockholm, Sweden")
+                p
+            +job("Bachelors' in Nutrition and Dietetics", "Kashan University of Medical Sciences", "http://en.kaums.ac.ir/", "Aug, 2014 - May, 2018", "Kashan, Iran")
+                p
+
+        +block('Internships', false)
+            +job("various departments", "Shahid Beheshti Hospital", "http://en.kaums.ac.ir/Default.aspx?PageID=271", "May, 2017 - May, 2018", "Kashan, Iran")
                 ul
-                    li Sjukhusmat avdelning
-                    li Medicinskt diagnostiskt laboratorium
-                    li Barns sjukdom avdelning
-                    li Vårdcentral
-                    li Lever-, matsmältnings- och bukspottkörteln avdelning
-                    li Kardiovaskulär CCU-avdelning
-                    li Avdelningen för diabetes och endokrinologi
-                    li Kirurgi och ICU
-                    li Njuravdelning
-                    li Livsmedelsindustrin och kommuner
-                p Jag klarade alla praktiker med de bästa resultaten.
+                    li Hospital's food department
+                    li Medical diagnostic laboratory
+                    li Children's disease department
+                    li Health center
+                    li Liver, Digestive and Pancreatic Department
+                    li Cardiovascular CCU Department
+                    li Department of Diabetes and Endocrinology
+                    li Surgery and ICU
+                    li Kidney department
+                    li The food industry and municipalities
+                p I have passed all the practices with good grades.
 
-        +block('Refrenser', false)
-            +job("Dr. Zatollah Asemi (Docent)", "Kashan University of Medical Sciences", "http://en.kaums.ac.ir/", null, null, "från")
+        +block('References', false)
+            +job("Dr. Zatollah Asemi (Professor)", "Kashan University of Medical Sciences", "http://en.kaums.ac.ir/", null, null, "from")
                 p
                     |e-post:
                     |
@@ -72,23 +75,26 @@ main
                     a(href='tel:+989133615446', target='_blank') +98 913 361 5446
 
     aside#sidebar
-        +block('Kompetenser', false)
-            +rateItem('Flexibilitet och anpassningsförmåga')
-            +rateItem('Kommunikation')
+        +block('Skills', false)
+            +rateItem('Flexibility and adaptability')
+            +rateItem('Communication')
             +rateItem('Microsoft PowerPoint')
-            +rateItem('Kostrådgivning')
-            +rateItem('Måltidsplanering')
-            +rateItem('Livsstil intervention')
-            +rateItem('Diet hantering', null)
-            +rateItem('Samarbeta med andra sjukvårdspersonal', null)
-            +rateItem('Bedömning klient närings status', null)
-            +rateItem('Bedömning av klientnäringsbehov', null)
+            +rateItem('Nutrition coaching')
+            +rateItem('Lifestyle intervention')
+            +rateItem('Diet management', null)
+            +rateItem('Collaboration with other healthcare professionals', null)
+            +rateItem('Nutrition status assessment', null)
+            +rateItem('Nutrition needs assessment', null)
 
-        +block('Språk', false)
-            +rateItem('Svenska: C1', null, 8)
-            +rateItem('Engelska: B2', null, 7)
-            +rateItem('Persiska: Modersmålstalare', null, 10)
+        +block('Languages', false)
+            +rateItem('Swedish: C1', null, 8)
+            +rateItem('English: B2', null, 7)
+            +rateItem('Persian: Native', null, 10)
 
+        br
+        br
+        br
+        br
         br
         br
         br
@@ -98,17 +104,16 @@ main
 
 
         +block('Hobbies', false)
-            +rateItem('Träning', null)
-            +rateItem('Att cykla', null)
-            +rateItem('Resor', null)
+            +rateItem('Exercise', null)
+            +rateItem('Cycling', null)
+            +rateItem('Traveling', null)
             +rateItem('Camping', null)
             +rateItem('Hiking', null)
-            +rateItem('Att blogga', null)
-            +rateItem('Bakning och matlagning', null)
-            +rateItem('Att prova nya upplevelser', null)
-            +rateItem('Att lyssna på podcaster', null)
-            +rateItem('Att läsa böcker', null)
-            +rateItem('Att läsa vetenskapliga artiklar', null)
+            +rateItem('Blogging', null)
+            +rateItem('Baking and cooking', null)
+            +rateItem('Listening to podcasts', null)
+            +rateItem('Reading books', null)
+            +rateItem('Reading scientific articles', null)
 
         //- #repo
             em My resume git repo:

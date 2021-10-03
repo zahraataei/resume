@@ -2,7 +2,6 @@
   "name": "resume",
   "version": "1.0.2",
   "description": "My resume :D",
-  "main": "index.js",
   "scripts": {
     "start": "relaxed ./resume.pug",
     "make": "relaxed ./resume.pug --build-once",
@@ -23,9 +22,6 @@
   },
   "homepage": "https://github.com/saeedseyfi/resume#readme",
   "dependencies": {
-    "exec-local-bin": "^1.1.1",
-    "open": "^6.4.0",
-    "relaxedjs": "^0.2.2",
-    "yargs": "^14.2.0"
+    "relaxedjs": "^0.2.2"
   }
 }
