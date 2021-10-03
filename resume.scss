@@ -106,7 +106,7 @@ main {
 }
 
 .block {
-  margin-bottom: $margin * 2;
+  margin-bottom: $margin * 1.4;
 
   &.boxed {
     border-bottom: 1px dashed lighten($body-color, 65%);
